@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'sbold';
+    src: url('./fonts/Inter-SemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'black';
+    src: url('./fonts/Inter-Black.ttf')
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('./fonts/Inter-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Heading Pro Trial";
+    src: url("./fonts/Heading-Pro-Bold-trial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bison Bold";
+    src: url("./fonts/Bison-Bold(PersonalUse).ttf") format("truetype");
+}

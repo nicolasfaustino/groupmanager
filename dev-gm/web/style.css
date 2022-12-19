@@ -1,0 +1,445 @@
+:root {
+    --main-color: rgb(98, 205, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+#app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 82.552083333333336vw;
+    height: 43.989583333333336vw;
+    background-color: rgb(24, 24, 24);
+    border: 5px solid var(--main-color);
+    border-radius: 1em;
+    background-size: 100% 100%;
+}
+
+.headerbar {
+    width: 81.9vw;
+    height: 215px;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom: white 2px solid;
+    background: linear-gradient(133deg, rgb(74, 182, 245) 0%, rgb(40, 140, 206) 42%, rgb(59, 143, 221) 44%, rgb(55, 146, 221)44%, rgb(101, 181, 247) 44%, rgb(80, 129, 221) 52%, rgb(72, 115, 233) 52%, rgb(0, 48, 180) 53%, rgb(78, 147, 251) 100%);
+    position: absolute;
+}
+
+.header {
+    padding-top: 30px;
+    padding-left: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgperfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+
+.orgname {
+    margin-left: 30px;
+    color: white;
+    font-family: "Heading Pro Trial";
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    bottom: 2.9vw;
+    right: 10vw;
+    width: 39.739583333333336vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6770833333333334vw;
+}
+
+.filter-select {
+    background: var(--main-color);
+    border-radius: 11vw;
+    width: 8vw;
+    padding: .2vw .4vw;
+    font-size: .75vw;
+    font-family: "Heading Pro Trial";
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.data {
+    height: 21.28125vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.infos {
+    width: 25vw;
+    background: #080808;
+    border-radius: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.45vw;
+}
+
+.tableData {
+    width: 35.739583333333336vw;
+    background: #080808;
+    border-radius: 0.7vw;
+    padding: .7vw;
+    overflow-y: scroll;
+}
+
+.buttons {
+    position: absolute;
+    width: 340px;
+    right: 50px;
+    top: 330px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: .17vw 1.5vw;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1vw;
+    height: 25px;
+    border-radius: 1em;
+    font-family: "Heading Pro Trial";
+    font-weight: bold;
+}
+
+.infoData button {
+    width:100px;
+    padding: .17vw .8vw;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1vw;
+    height: 25px;
+    border-radius: 1em;
+    font-family: "Heading Pro Trial";
+    font-weight: bold;
+}
+
+.remove {
+    color: #fa4747;
+}
+
+.up {
+    color: #005dc7;
+}
+
+.down {
+    color: #ffbe33;
+}
+
+.buttons button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.infos {
+    padding: 2.3vw 1vw;
+}
+
+.info {
+    width: 100%;
+    height: 4vw;
+    background: #131313;
+    display: flex;
+    gap: .8vw;
+    padding: 0 0.9vw;
+    align-items: center;
+}
+
+.infoData {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoData span {
+    color: var(--main-color);
+    font-family: 'Bison Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6166666666666667vw;
+    letter-spacing: 0.2vw;
+}
+
+.invite-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invite-header select {
+    background: #0F0E0E;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    height: 1.1vw;
+    width: 8vw;
+    padding: 0 0.2vw;
+    font-size: .6vw;
+    border-radius: .1vw;
+}
+
+.infoData h1 {
+    font-family: 'Bison Bold', sans-serif;
+    color: #fff;
+    font-size: 1.7vw;
+}
+
+.infoData input {
+    background: #0f0e0e;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: .25vw;
+    font-family: 'Bison Bold', sans-serif;
+    color: rgba(235,235,235,.8);
+    font-size: 0.7vw;
+    letter-spacing: 0.15vw;
+    margin-top: .2vw;
+}
+
+.imageArea {
+    height: 70%;
+    width: 5.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid .3vw #0f0e0e;
+}
+
+.imageArea img {
+    width: 2.2vw;
+}
+
+.data-index-container {
+    width: 100%;
+    height: 2.0833333333333335vw;
+    display: grid;
+    grid-template-columns: 2.604166666666667vw repeat(3, 1fr) 3.9458333333333335vw;
+    grid-gap: 0.5208333333333334vw;
+    margin-bottom: 1.0416666666666667vw;
+}
+
+.data-index-container p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85vw;
+    font-weight: 600;
+    font-family: "Heading Pro Trial";
+    color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.2604166666666667vw;
+    background: #131313;
+}
+
+.data-table {
+    width: 100%;
+    height: 2.0833333333333335vw;
+    display: grid;
+    grid-template-columns: 2.604166666666667vw repeat(3, 1fr) 3.9458333333333335vw;
+    grid-gap: 0.5208333333333334vw;
+    font-size: 0.8291666666666667vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 0.2604166666666667vw;
+    background: #131313;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Bison Bold', sans-serif;
+    margin-bottom: 0.5208333333333334vw;
+    transition: all .5s;
+}
+
+.status-ball {
+    height: 0.78125vw;
+    width: 0.78125vw;
+    background-color: #429F2D;
+    border-radius: 50%;
+} 
+
+.searchBar {
+    position: absolute;
+    right: 10vw;
+    top: 6.5vw;
+    height: 2vw;
+    border: solid .2vw var(--main-color);
+    padding: 0.6vw;
+    color: white;
+    outline: none;
+    border-radius: 1.2vw;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: .6vw;
+    padding: 0 .6vw;
+}
+
+.searchBar img {
+    width: 1vw;
+}
+
+.searchBar input {
+    width: 11vw;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: .75vw;
+    font-family: "Heading Pro Trial";
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+}
+
+.searchBar input::placeholder {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: .7vw;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #212121;
+    transition: all .5s;
+    border-radius: 3vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 3vw;
+    box-shadow: 0rem 0rem .3vw .3vw var(--main-color)1a;
+    transition: all .5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: all .5s;
+    background: var(--main-color)ac;
+}
+
+.buttonsnav {
+    display: flex;
+    margin-top: 225px;
+    margin-left: 270px;
+}
+
+.buttonimage {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0);
+    outline :none;
+    border: none;
+    margin-right: 10px;
+}
+
+.buttonsnav ul li.active {
+    border-bottom: 3px solid white;
+}
+
+.buttonimage img {
+    width: 22px;
+    height: 22px;
+}
+
+.infomap {
+    width: 800px;
+    height: 320px;
+    margin-right: 50px;
+    margin-bottom: -30px;
+    background: #080808;
+    border-radius: 0.7vw;
+    overflow: auto;
+}
+
+.cardmap {
+    margin: 10px;
+    height: 220px;
+    width: 22.4%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #1b1b1b;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.cardmap h1 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Bison Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cardmap p {
+    color: white;
+    font-family: 'Bison Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cardmap img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.cardmap button {
+    margin-right: 10px;
+    margin-top: 3px;
+    padding: .17vw 1.5vw;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1vw;
+    height: 25px;
+    border-radius: 1em;
+    font-family: "Heading Pro Trial";
+    font-weight: bold;
+}
